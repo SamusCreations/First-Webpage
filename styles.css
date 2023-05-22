@@ -1,81 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
 }
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-body{
-    background-color: #081b29;
-}
-
-footer {
-    color: #ededed;
-    text-align: center;
-}
-
-h1,
-h2,
-h3 {
-    color: #ededed;
-}
-
-/* Estilos de Cascada */
-h1 {
-    font-size: 28px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-.avatar{
-    border-radius: 50%;
-}
-
-.container{
     width: 100%;
-    min-height: 100vh;
-}
-
-nav{
+    padding: 20px 10%;
+    background: #081b29;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    height: 80px;
-    line-height: 80px;
-    z-index: 111;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
-    font-weight: 600;
     color: #ededed;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.navItems{
-    display: flex;
-}
-
-.navItems li{
-    list-style: none;
-    margin: 0 15px;
-}
-
-.navItems li a{
+.navbar a {
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
@@ -84,14 +41,185 @@ nav{
     transition: .3s;
 }
 
-.navItems li:hover a,
-.links a:hover{
+.navbar .links {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.navbar a:hover,
+.navbar .active {
     color: aqua;
 }
 
-.links a{
-    font-size: 30px;
-    color: #ededed;
-    margin: 25px 10px;
-    transition: .3s;
+.inicio {
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.inicio-content {
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.inicio-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.inicio-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    font-size: 19px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover {
+    color: #081b29;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aqua;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+
+.curriculum {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+.personal-content {
+    max-width: 600px;
+}
+
+.academia {
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+.academia-content {
+    max-width: 600px;
+}
+
+.especializacion {
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+.especializacion-content {
+    max-width: 600px;
+}
+
+.experiencia {
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+.experiencia-content {
+    max-width: 600px;
+}
+
+.hobbies {
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+.hobbies-content {
+    max-width: 600px;
+}
+
+.resumen{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+    padding: 10px 12.5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid aqua;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #081b29;
+}
+
+footer {
+    color: aqua;
+    text-align: center;
+    padding: 25px 0
+}
+
+footer p {
+    font-size: 12;
 }
