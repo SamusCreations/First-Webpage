@@ -308,20 +308,20 @@ h3 {
     width: 100%;
 }
 
-.curriculum{
+.curriculum {
     flex: 1;
     height: 100vh;
     margin-top: 50px;
 }
 
-.aside{
+.aside {
     flex: 1;
     height: 100vh;
     margin-top: 50px;
     align-items: center;
 }
 
-.aside-content{
+.aside-content {
     padding: 10% 25%;
 }
 
@@ -426,7 +426,7 @@ footer p {
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
